@@ -1,0 +1,46 @@
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck good
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ badinode
+badinode: command not found
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badinode
+ERROR: bad inode.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badaddr
+ERROR: bad direct address in inode.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badindir1
+ERROR: bad indirect address in inode.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badindir2
+ERROR: bad indirect address in inode.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badroot
+ERROR: root directory does not exist.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badroot1
+image not found.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badroot2
+ERROR: root directory does not exist.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badfmt
+ERROR: directory not properly formatted.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck mrkfree
+ERROR: address used by inode but marked free in bitmap.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck indirfree
+ERROR: address used by inode but marked free in bitmap.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck mrkused
+ERROR: bitmap marks block in use but it is not in use.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck addronce
+ERROR: direct address used more than once.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck addronce2
+ERROR: indirect address used more than once.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck imrkused
+ERROR: inode marked use but not found in a directory.
+inode number is 99 and type is 2nkaran@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck imrkfree
+inode number is 8
+ERROR: inode referred to in directory but marked free.
+ and inode directory is 1karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badrefcnt2
+ERROR: bad reference count for file.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck goodlarge
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck goodrefcnt
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck goodlink
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck goodrm
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck dironce
+ERROR: directory appears more than once in file system.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$ ./xcheck badlarge
+ERROR: directory appears more than once in file system.
+karan@LAPTOP-3JFJFERE:/mnt/c/Karans/Fall 2021/Operating systems/Project3/OS-Project-4$
